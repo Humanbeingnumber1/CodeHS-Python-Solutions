@@ -1,0 +1,16 @@
+speed(8)
+def square_line():
+    for i in range(8):
+     pendown()
+     for i in range(4):
+         forward(50)
+         left(90)
+     forward(50)
+     penup()
+
+penup()   
+setposition(-200,150)
+for i in range(4):
+    square_line()
+    backward(50)
+    right(90)
