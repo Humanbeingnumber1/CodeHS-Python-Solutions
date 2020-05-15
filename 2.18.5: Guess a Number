@@ -1,0 +1,17 @@
+import random
+secret_number = random.randrange(1,10)
+user_number = int(input("guess a number from 1 to 10 :"))
+
+    
+while user_number != secret_number:
+        user_number = int(input("guess a number from 1 to 10 :"))
+
+
+if user_number == secret_number:
+        color("green")
+        pensize(5)
+        left(135)
+        forward(25)
+        setposition(0,0)
+        right(90)
+        forward(100)
