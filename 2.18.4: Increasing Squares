@@ -1,0 +1,22 @@
+speed(0)
+
+def square():
+    length = 50
+    while length < 400:
+     penup()
+     right(90)
+     forward(length/2)
+     left(90)
+     backward(length/2)
+     for i in range(4):
+      pendown()
+      forward(length)
+      left(90)
+      penup()
+     setposition(0,0)
+     length = length + 50
+    
+    
+    
+length = 50   
+square()
