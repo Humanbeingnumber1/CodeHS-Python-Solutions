@@ -1,0 +1,26 @@
+speed(0)
+row_value=0
+radius = 25
+def move_to_row(circles):
+    x_value = -(((circles*50)/2))
+    y_value = -200+(50*row_value)
+    penup()
+    setposition(x_value,y_value)
+    pendown()
+def circle_row(num_circle):
+    for i in range(num_circle):
+        pendown()
+        circle(radius)
+        penup()
+        forward(radius*2)
+        
+    
+    
+num_circle= int(input("how many circles should we have in the bottom row ? :"))
+
+
+for i in range (num_circle):
+    move_to_row(num_circle)
+    row_value = row_value + 1
+    circle_row(num_circle)
+    num_circle = num_circle-1
