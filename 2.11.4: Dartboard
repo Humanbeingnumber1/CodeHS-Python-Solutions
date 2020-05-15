@@ -1,0 +1,14 @@
+radius = 67
+
+def dartboard():
+    penup()
+    right(90)
+    forward(67)
+    left(90)
+    
+     
+for i in range(4):
+    pendown()
+    circle(radius)
+    dartboard()
+    radius = radius + 67
