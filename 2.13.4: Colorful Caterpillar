@@ -1,0 +1,16 @@
+def caterpillar(color_choice):
+    pendown()
+    color(color_choice)
+    begin_fill()
+    circle(15)
+    end_fill()
+    penup()
+    forward(30)
+
+penup()
+setposition(-100,0)
+for i in range(2):
+    caterpillar("red")
+    caterpillar("blue")
+    caterpillar("green")
+    caterpillar("yellow")
