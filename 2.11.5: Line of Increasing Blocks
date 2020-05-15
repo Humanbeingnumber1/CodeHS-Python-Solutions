@@ -1,0 +1,15 @@
+speed(0)
+side = 10
+
+def square():
+    for i in range(4):
+        forward(side)
+        left(90)
+penup()
+setposition(-150,0)
+for i in range(5):
+    pendown()
+    square()
+    penup()
+    forward(side*2)
+    side = side + 10
