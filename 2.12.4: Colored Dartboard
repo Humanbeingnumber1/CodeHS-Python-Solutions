@@ -1,0 +1,19 @@
+
+radius = 100
+
+def dartboard():
+    penup()
+    left(90)
+    forward(25)
+    right(90)
+    
+     
+for i in range(4):
+    pendown()
+    color_choice = input("what color should i fill ? ")
+    color(color_choice)
+    begin_fill()
+    circle(radius)
+    end_fill()
+    dartboard()
+    radius = radius - 25
