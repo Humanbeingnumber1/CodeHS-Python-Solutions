@@ -1,0 +1,60 @@
+speed(0)
+import random
+secret_number = random.randrange(1,10)
+user_number = int(input("guess a number from 1 to 10 :"))
+
+def high():
+    clear()
+    pendown()
+    pensize(5)
+    left(90)
+    forward(100)
+    right(135)
+    forward(25)
+    backward(25)
+    left(270)
+    forward(25)
+    penup()
+    left(135)
+    setposition(0,0)
+
+    
+
+def low():
+    clear()
+    pendown()
+    pensize(5)
+    left(90)
+    backward(100)
+    left(135)
+    backward(25)
+    forward(25)
+    right(270)
+    backward(25)
+    penup()
+    left(45)
+    setposition(0,0)
+
+    
+    
+
+while user_number != secret_number:
+    if user_number > secret_number:
+        high()
+        user_number = int(input("guess a number from 1 to 10 :"))
+    elif user_number < secret_number:
+        low()
+        user_number = int(input("guess a number from 1 to 10 :"))
+        
+
+
+if user_number == secret_number:
+        clear()
+        pendown()
+        color("green")
+        pensize(5)
+        left(135)
+        forward(25)
+        setposition(0,0)
+        right(90)
+        forward(100)
