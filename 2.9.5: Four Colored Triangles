@@ -1,0 +1,23 @@
+speed(5)
+def multicolored_triangle():
+    for i in range(4):
+        pendown()
+        left(120)
+        color("blue")
+        forward(50)
+        color("green")
+        left(120)
+        forward(50)
+        color("red")
+        left(120)
+        forward(50)
+        penup()
+        forward(50)
+        
+       
+        
+penup()
+pensize(5)
+backward(100)
+pendown()
+multicolored_triangle()
