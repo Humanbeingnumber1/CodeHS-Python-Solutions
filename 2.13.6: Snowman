@@ -1,0 +1,40 @@
+# Snowman body parts
+
+def snowman_bottom(radius):
+    pendown()
+    color("gray")
+    begin_fill()
+    circle(radius)
+    end_fill()
+    penup()
+    left(90)
+    forward(radius*2)
+    right(90)
+    
+
+def snowman_middle(radius):
+    pendown()
+    begin_fill()
+    circle(radius/2)
+    end_fill()
+    penup()
+    left(90)
+    forward(radius)
+    right(90)
+    
+def snowman_head(radius):
+    pendown()
+    begin_fill()
+    circle(radius/4)
+    end_fill()
+
+# last bits of code
+    
+radius = int(input("What should be the radius ? "))
+
+# putting it together
+penup()
+setposition(0,-200)
+snowman_bottom(radius)
+snowman_middle(radius)
+snowman_head(radius)
