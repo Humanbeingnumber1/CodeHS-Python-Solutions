@@ -1,0 +1,32 @@
+rating = int(input("what is the rating ? :"))
+
+def draw_x():
+    pensize(5)
+    color("red")
+    right(45)
+    for i in range(4):
+     forward(50)
+     setposition(0,0)
+     left(90)
+     
+def draw_line():
+    pensize(5)
+    color("yellow")
+    backward(50)
+    forward(100)
+    
+def draw_good():
+    pensize(5)
+    color("green")
+    left(135)
+    forward(25)
+    setposition(0,0)
+    right(90)
+    forward(100)
+    
+if rating <=4:
+    draw_x()
+elif rating > 4 and rating < 8:
+    draw_line()
+else:
+    draw_good()
