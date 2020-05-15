@@ -1,0 +1,47 @@
+speed(0)
+color_value = 0
+
+if color_value%2 == 0:
+    tone = "black"
+else:
+    tone = "red"
+    
+
+def square(tone):
+    color(tone)
+    begin_fill()
+    for i in range(4):
+       forward(40)
+       left(90)
+    end_fill()
+    forward(40)
+    
+def if_then(tone):
+    if color_value%2 == 0:
+       tone = "black"
+    else:
+       tone = "red"
+    
+def square_lines(tone):
+    color_value = 0
+    for i in range(10):
+     for i in range(10):
+         if color_value%2 == 0:
+             tone == "black"
+         else:
+             tone == "red"
+         square(tone)
+         color_value = color_value + 1
+     backward(40)
+     left(90)
+     forward(40)
+     right(90)
+     backward(400)
+
+
+
+
+penup() 
+setposition(-200,-200)
+pendown()
+square_lines(tone)
