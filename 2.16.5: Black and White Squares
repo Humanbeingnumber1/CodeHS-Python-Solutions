@@ -1,0 +1,21 @@
+speed(0)
+count = 0
+def square():
+    count = 0
+    for i in range(4):
+        pendown()
+        forward(20)
+        left(90)
+        penup()
+    count = count + 1
+    
+penup()
+setposition(-90,0)
+for x in range(6):
+ if count%2 == 0:
+     begin_fill()
+     square()
+     end_fill()
+     forward(40)
+ square()
+ forward(40)
